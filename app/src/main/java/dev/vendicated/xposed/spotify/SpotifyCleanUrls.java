@@ -16,8 +16,6 @@ public class SpotifyCleanUrls implements IXposedHookLoadPackage {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) {
                 var key = (String) param.args[0];
-                Log.e("URI Key", key);
-                Log.e("URI Value", (String) param.args[1]);
                 if ("si".equals(key) || key.startsWith("utm_"))
                     param.setResult(param.thisObject);
             }
