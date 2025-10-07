@@ -10,7 +10,7 @@ android {
         minSdkVersion 29
         targetSdkVersion 32
         versionCode 1921
-        versionName "3.8"
+        versionName "1.0.0"
     }
 
 
